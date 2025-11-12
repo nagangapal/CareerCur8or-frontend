@@ -1,24 +1,22 @@
+
 # CareerCur8or — Frontend Showcase
 
-This folder is a sanitized frontend showcase copy of the CareerCur8or application.
+Welcome! This folder contains the frontend (React + TypeScript) UI for CareerCur8or. It's a sanitized snapshot intended for review and UI inspection.
 
-Purpose
-- Provide a readable, self-contained snapshot of the React + TypeScript UI.
-- This is not intended to be a runnable or deployed application by itself — API endpoints and secrets have been neutralized.
+Quick notes
+- This is a showcase copy — not a full runnable app. Backend endpoints, secrets, and assistant prompts have been neutralized or removed.
+- Canonical CSS files were consolidated under `./styles/` for easier review.
 
-What was removed or sanitized
-- Assistant/chatbot prompt text and any embedded developer prompts were replaced with neutral placeholders.
-- Localhost API fallbacks were changed to neutral placeholders (https://example.com) to avoid implying runnable services.
-- Old/backup CSS files were removed and canonical styles consolidated under `./styles/`.
+Screenshots
+- I'll add screenshots of the main screens shortly and update this README when they're available.
 
-If you want to run the UI locally
-- Restore appropriate environment variables (Vite .env) for API endpoints (VITE_API_URL, VITE_AUTH_URL, VITE_PARSER_URL, VITE_CHATBOT_URL).
-- Install dependencies and run the Vite dev server from the main project or from this folder after adding a full `package.json` and dependencies.
+Want to run it locally?
+- Restore appropriate environment variables (Vite .env) for API endpoints: VITE_API_URL, VITE_AUTH_URL, VITE_PARSER_URL, VITE_CHATBOT_URL.
+- Add a `package.json` and install dependencies in this folder (if you want a self-contained runnable copy), then run the Vite dev server.
 
-Notes
-- This showcase is intended for inspection, demos, and UI reviews. It intentionally omits backend credentials and hard-coded endpoints.
-- If you want, I can add a short CONTRIBUTING or RUNNING section with commands to make this a runnable sample.
+Feedback or next steps
+- If you'd like, I can: add runnable instructions, include mocked API endpoints for local demo, or add the promised screenshots.
 
-Generated and sanitized by an automated code clean-up session.
+Generated and sanitized during a repo cleanup session.
 # CareerCur8or-frontend
 Frontend code for CareerCur8or
