@@ -1,0 +1,14 @@
+{
+  "name": "careercur8or-frontend-showcase",
+  "version": "0.0.0",
+  "private": true,
+  "description": "CareerCur8or frontend showcase (no secrets, demo-only)",
+  "scripts": {
+    "build": "echo 'This is a showcase repo (no build)'"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0"
+  }
+}

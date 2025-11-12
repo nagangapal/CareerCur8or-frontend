@@ -1,0 +1,201 @@
+/* ========================================
+   APP SHELL - RESPONSIVE DESIGN
+   ======================================== */
+.app-shell {
+	min-height: 100dvh;
+	background: var(--color-surface);
+	color: var(--color-text-primary);
+	display: flex;
+	flex-direction: column;
+}
+
+/* ========================================
+   HEADER
+   ======================================== */
+.app-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: var(--spacing-4) var(--spacing-4);
+	background: var(--color-background);
+	border-bottom: 1px solid var(--color-border);
+	box-shadow: var(--shadow-sm);
+	position: sticky;
+	top: 0;
+	z-index: var(--z-sticky);
+	gap: var(--spacing-4);
+}
+
+@media (min-width: 640px) {
+	.app-header {
+		padding: var(--spacing-4) var(--spacing-6);
+	}
+}
+
+@media (min-width: 1024px) {
+	.app-header {
+		padding: var(--spacing-5) var(--spacing-8);
+	}
+}
+
+.brand {
+	font-weight: 700;
+	font-size: var(--font-size-xl);
+	color: var(--color-primary);
+	white-space: nowrap;
+}
+
+@media (min-width: 640px) {
+	.brand {
+		font-size: var(--font-size-2xl);
+	}
+}
+
+/* ========================================
+   NAVIGATION TABS
+   ======================================== */
+.tabs {
+	display: flex;
+	gap: var(--spacing-2);
+	flex: 1;
+	justify-content: center;
+}
+
+@media (min-width: 640px) {
+	.tabs {
+		gap: var(--spacing-3);
+	}
+}
+
+.tabs button {
+	background: transparent;
+	border: none;
+	color: var(--color-text-secondary);
+	padding: var(--spacing-2) var(--spacing-3);
+	border-radius: var(--radius-md);
+	font-size: var(--font-size-sm);
+	font-weight: 500;
+	transition: all var(--transition-fast);
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+@media (min-width: 640px) {
+	.tabs button {
+		padding: var(--spacing-3) var(--spacing-5);
+		font-size: var(--font-size-base);
+	}
+}
+
+.tabs button:hover {
+	background: var(--color-surface-hover);
+	color: var(--color-text-primary);
+}
+
+.tabs button.active {
+	background: var(--color-primary);
+	color: var(--color-text-inverse);
+	font-weight: 600;
+	box-shadow: var(--shadow-sm);
+}
+
+/* ========================================
+   LOGOUT BUTTON
+   ======================================== */
+.logout {
+	background: transparent;
+	border: 1px solid var(--color-border);
+	color: var(--color-text-secondary);
+	padding: var(--spacing-2) var(--spacing-3);
+	border-radius: var(--radius-md);
+	font-size: var(--font-size-sm);
+	font-weight: 500;
+	transition: all var(--transition-fast);
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+@media (min-width: 640px) {
+	.logout {
+		padding: var(--spacing-3) var(--spacing-5);
+	}
+}
+
+.logout:hover {
+	background: var(--color-error-light);
+	border-color: var(--color-error);
+	color: var(--color-error);
+}
+
+/* ========================================
+   MAIN CONTENT
+   ======================================== */
+.app-main {
+	flex: 1;
+	padding: var(--spacing-4);
+	overflow-y: auto;
+}
+
+@media (min-width: 640px) {
+	.app-main {
+		padding: var(--spacing-6);
+	}
+}
+
+@media (min-width: 1024px) {
+	.app-main {
+		padding: var(--spacing-8);
+	}
+}
+
+/* ========================================
+   MOBILE RESPONSIVE LAYOUT
+   ======================================== */
+@media (max-width: 639px) {
+	.app-header {
+		flex-wrap: wrap;
+		padding: var(--spacing-3);
+	}
+	
+	.brand {
+		order: 1;
+		flex: 1;
+	}
+	
+	.logout {
+		order: 2;
+		padding: var(--spacing-2);
+		font-size: var(--font-size-xs);
+	}
+	
+	.tabs {
+		order: 3;
+		width: 100%;
+		margin-top: var(--spacing-2);
+		gap: var(--spacing-2);
+	}
+	
+	.tabs button {
+		flex: 1;
+		padding: var(--spacing-2);
+		font-size: var(--font-size-xs);
+	}
+	
+	.app-main {
+		padding: var(--spacing-3);
+	}
+}
+
+/* Small mobile devices */
+@media (max-width: 360px) {
+	.tabs button {
+		font-size: 0.7rem;
+		padding: var(--spacing-1) var(--spacing-2);
+	}
+	
+	.brand {
+		font-size: var(--font-size-lg);
+	}
+}
+
+

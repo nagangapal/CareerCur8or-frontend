@@ -1,0 +1,275 @@
+/* ========================================
+   PROFILE TAB - RESPONSIVE DESIGN
+   ======================================== */
+.profile-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: var(--spacing-4);
+	width: 100%;
+	margin: 0;
+}
+
+@media (min-width: 1024px) {
+	.profile-grid {
+		grid-template-columns: 1fr 1fr;
+		gap: var(--spacing-6);
+	}
+}
+
+/* ========================================
+   SECTION CARDS
+   ======================================== */
+.profile-section {
+	background: var(--color-background);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-lg);
+	padding: var(--spacing-5);
+	box-shadow: var(--shadow-sm);
+}
+
+@media (min-width: 640px) {
+	.profile-section {
+		padding: var(--spacing-6);
+	}
+}
+
+.profile-section h2 {
+	font-size: var(--font-size-xl);
+	margin-bottom: var(--spacing-5);
+	color: var(--color-text-primary);
+}
+
+.profile-section.full-width {
+	grid-column: 1 / -1;
+}
+
+/* ========================================
+   BASICS SECTION
+   ======================================== */
+.basics-row {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: var(--spacing-4);
+	margin-bottom: var(--spacing-4);
+}
+
+@media (min-width: 640px) {
+	.basics-row {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.basics-row label {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-2);
+}
+
+.basics-row span {
+	font-size: var(--font-size-sm);
+	font-weight: 500;
+	color: var(--color-text-primary);
+}
+
+/* Summary textarea */
+.summary-label {
+	margin-bottom: var(--spacing-4);
+}
+
+.summary-label textarea {
+	min-height: 120px;
+	resize: vertical;
+}
+
+/* ========================================
+   SKILLS SECTION
+   ======================================== */
+.skills-input {
+	margin-bottom: var(--spacing-3);
+}
+
+.skills-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--spacing-2);
+	margin-top: var(--spacing-3);
+}
+
+.skill-tag {
+	background: var(--color-primary-light);
+	color: var(--color-primary);
+	padding: var(--spacing-2) var(--spacing-3);
+	border-radius: var(--radius-full);
+	font-size: var(--font-size-sm);
+	font-weight: 500;
+	display: inline-flex;
+	align-items: center;
+	gap: var(--spacing-2);
+}
+
+.skill-tag button {
+	background: transparent;
+	border: none;
+	color: var(--color-primary);
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	transition: background var(--transition-fast);
+}
+
+.skill-tag button:hover {
+	background: rgba(79, 70, 229, 0.2);
+}
+
+/* ========================================
+   IMPORT OPTIONS SECTION
+   ======================================== */
+.import-option {
+	margin-bottom: var(--spacing-4);
+}
+
+.import-hint {
+	color: var(--color-text-secondary);
+	font-size: var(--font-size-sm);
+	margin-top: var(--spacing-2);
+}
+
+/* ========================================
+   EDUCATION & EXPERIENCE SECTIONS
+   ======================================== */
+.section-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: var(--spacing-5);
+}
+
+.section-header h2 {
+	margin: 0;
+}
+
+.items-list {
+	display: grid;
+	gap: var(--spacing-4);
+}
+
+/* Education/Experience item */
+.item-card {
+	background: var(--color-surface);
+	border: 1px solid var(--color-border-light);
+	border-radius: var(--radius-md);
+	padding: var(--spacing-4);
+	position: relative;
+}
+
+@media (min-width: 640px) {
+	.item-card {
+		padding: var(--spacing-5);
+	}
+}
+
+.item-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: var(--spacing-3);
+}
+
+@media (min-width: 640px) {
+	.item-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 1024px) {
+	.item-grid.four-col {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+.item-grid .full-width {
+	grid-column: 1 / -1;
+}
+
+.item-grid label {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-2);
+}
+
+.item-grid textarea {
+	min-height: 80px;
+	resize: vertical;
+}
+
+.delete-item {
+	position: absolute;
+	top: var(--spacing-3);
+	right: var(--spacing-3);
+	background: var(--color-error-light);
+	color: var(--color-error);
+	border: none;
+	border-radius: var(--radius-md);
+	padding: var(--spacing-1) var(--spacing-2);
+	font-size: var(--font-size-xs);
+	cursor: pointer;
+	transition: all var(--transition-fast);
+}
+
+.delete-item:hover {
+	background: var(--color-error);
+	color: white;
+}
+
+/* ========================================
+   SAVE BUTTON
+   ======================================== */
+.save-section {
+	grid-column: 1 / -1;
+	display: flex;
+	justify-content: flex-end;
+	gap: var(--spacing-3);
+	margin-top: var(--spacing-4);
+}
+
+.save-section button {
+	min-width: 120px;
+}
+
+@media (max-width: 639px) {
+	.save-section {
+		flex-direction: column;
+	}
+	
+	.save-section button {
+		width: 100%;
+	}
+}
+
+/* ========================================
+   MOBILE OPTIMIZATIONS
+   ======================================== */
+@media (max-width: 639px) {
+	.profile-section {
+		padding: var(--spacing-4);
+	}
+	
+	.profile-section h2 {
+		font-size: var(--font-size-lg);
+	}
+	
+	.item-card {
+		padding: var(--spacing-3);
+	}
+	
+	.delete-item {
+		position: static;
+		width: 100%;
+		margin-top: var(--spacing-3);
+	}
+}
