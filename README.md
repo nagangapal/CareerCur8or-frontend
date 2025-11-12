@@ -1,4 +1,3 @@
-<img width="1377" height="695" alt="Screenshot 2025-11-12 at 2 30 53 PM" src="https://github.com/user-attachments/assets/506b097f-467c-4200-8ee4-2b2f9649f3a1" /><img width="1377" height="695" alt="Screenshot 2025-11-12 at 2 31 03 PM" src="https://github.com/user-attachments/assets/4c6ad394-5b42-4c57-94bc-df01db2a789f" /><img width="1377" height="695" alt="Screenshot 2025-11-12 at 2 31 08 PM" src="https://github.com/user-attachments/assets/5f7cd83e-443f-4afe-88a8-c703c795a38f" /><img width="1377" height="695" alt="Screenshot 2025-11-12 at 2 31 50 PM" src="https://github.com/user-attachments/assets/f1682a35-a4b2-4ded-8595-fdcb0333a4cd" />
 # CareerCur8or — Frontend Showcase
 
 Welcome! This folder contains the frontend (React + TypeScript) UI for CareerCur8or. It's a sanitized snapshot intended for review and UI inspection.
